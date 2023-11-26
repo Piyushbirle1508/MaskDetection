@@ -37,7 +37,7 @@ def mask_image():
 
 	# load the input image from disk, clone it, and grab the image spatial
 	# dimensions
-	image = cv2.imread(args["D:\mask\MaskDetection\images\pic1.jpeg"])
+	image = cv2.imread(args["image"])
 	orig = image.copy()
 	(h, w) = image.shape[:2]
 
