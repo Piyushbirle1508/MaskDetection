@@ -2,16 +2,13 @@
 
 ### Mask Detection System ###
 ### Introduction ###
-```This repository contains code for a Mask Detection System that can be used for detecting whether a person is wearing a mask or not. The system consists of three main components: training a mask detection model, applying it to images, and applying it to a video stream.```
+```This project focuses on the detection of whether a person is wearing a mask or not using deep learning techniques. The system utilizes a Convolutional Neural Network (CNN) model implemented with TensorFlow and Keras for accurate mask detection. The project includes different components, such as a mask detection model, image detection script, video detection script, and a graphical user interface for real-time mask detection.```
 
-### Contents ###
-1) Prerequisites
-2) Getting Started
-   1) Training the Model
-   2) Detecting Masks in Images
-   3) Detecting Masks in a Video Stream
-3) Dependencies
-4) License
+### Project Structure ###
+1) mask_detector.ipynb: Jupyter Notebook containing the code for training the mask detection model using a MobileNetV2 architecture.
+2) detect_mask_image.py: Python script for detecting masks in a single image.
+3) mask_detector_video.py: Python script for real-time mask detection in a video stream.
+4) mask_detection_gui.py: Python script for a graphical user interface (GUI) application for mask detection from video files.
 
 ### Prerequisites ###
 ```Before using the Mask Detection System, make sure you have the following prerequisites installed:```
@@ -27,15 +24,16 @@
 3) Open and run the mask_detector.ipynb Jupyter Notebook to train the model. You can modify the parameters like initial learning rate, number of epochs, and batch size as needed.
 
 ### Detecting Masks in Images ###
-1) Use the detect_mask_image.py script to detect masks in individual images.
-2) Run the script with the following command:
-arduino
-3) Copy code
-```python detect_mask_image.py --image path/to/your/image.jpg```
+1) Use the detect_mask_image.py script to detect masks in a single image.
+```python detect_mask_image.py```
 
-### Detecting Masks in a Video Stream ###
+### Detecting Masks in a live Video Stream ###
 1) Prepare your video stream (e.g., using a webcam or video file).
 2) Run the mask_detector_video.py script to detect masks in the video stream.
+
+### GUI Application ###
+```Execute the mask_detection_gui.py script to launch the GUI application for mask detection from downloaded video files.```
+```python mask_detection_gui.py```
 
 ### Dependencies ###
 ```Make sure you have the following Python packages installed, as specified in the requirements.txt file:```
@@ -48,13 +46,14 @@ arduino
 6) tqdm>=4.64.1
 7) tensorflow>=2.10.0
 8) opencv_python
-9) matplotlib==3.6.2
-10) scikit_learn>=1.1.2
-11) passlib==1.7.4
+9) matplotlib
+10) scikit_learn
+11) passlib>=1.7.4
 12) gunicorn==20.1.0
-13) Jinja2==3.1.2
+13) Jinja2
 14) itsdangerous==2.1.0
-15) MarkupSafe==2.1.1```
+15) MarkupSafe==2.1.1
+16) imutils
 
 ### License ###
 ```This project is licensed under the MIT License. See the LICENSE file for details.```
